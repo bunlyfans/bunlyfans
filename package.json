@@ -1,16 +1,12 @@
 {
   "name": "@bunlyfans/bunlyfans",
-  "module": "index.ts",
   "type": "module",
-  "devDependencies": {
-    "bun-types": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "private": true,
   "description": "Zero deps, powered by Bun",
   "version": "0.1.0",
-  "main": "index.ts",
   "author": "apastuhov",
-  "license": "ISC"
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ]
 }
