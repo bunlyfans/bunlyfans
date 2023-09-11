@@ -14,9 +14,10 @@
   "author": "bunlyfans",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bunlyfans/bunlyfans.git",
+    "url": "git+https://github.com/bunlyfans/bunlyfans.git",
     "directory": "packages/log"
   },
+  "homepage": "https://github.com/bunlyfans/bunlyfans/blob/main/packages/log/README.md",
   "scripts": {
     "test:watch": "bun test --watch --coverage"
   },
