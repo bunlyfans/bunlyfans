@@ -74,19 +74,12 @@ export class Logger {
       // But we want to apply color to it anyway, so it is converted to string
       const primitive = asPrimitive(data);
 
-      const message: string = primitive
-        ? primitive
-        : Array.isArray(data)
-        ? "Array:"
-        : "Object:";
-
-      const coloredMessage = tryWithColor(prefix + message, color);
-
-      method(coloredMessage);
-
       // If it is not a primitive type, we should just call original method for it
-      // in that way Bun (or terminal) will apply color to color type and may format it
-      if (!primitive) {
+      // in that way Bun (or terminal) will apply color to type and format it @see Bun.inspect
+      if (primitive) {
+        const coloredMessage = tryWithColor(prefix + primitive, color);
+        method(coloredMessage);
+      } else {
         method(...data);
       }
     };

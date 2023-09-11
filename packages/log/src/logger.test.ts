@@ -62,26 +62,26 @@ describe("Logger", () => {
           hasColors.mockRestore();
         });
 
-        test.each<[string, number, any]>([
-          ["string", 1, "test"],
-          ["number", 1, 1],
-          ["boolean", 1, true],
-          ["undefined", 1, undefined],
-          ["null", 1, null],
-          ["object", 2, { a: 1, b: "2", c: true }],
-          ["array", 2, [1, "2", true]],
-        ])("%s", (_type, calledTimes, value) => {
+        test.each<[string, any]>([
+          ["string", "test"],
+          ["number", 1],
+          ["boolean", true],
+          ["undefined", undefined],
+          ["null", null],
+          ["object", { a: 1, b: "2", c: true }],
+          ["array", [1, "2", true]],
+        ])("%s", (_type, value) => {
           logger[callMethod](value);
           expect(spy).toHaveBeenCalled();
-          expect(spy).toHaveBeenCalledTimes(calledTimes);
-          expect(spy.mock.calls).toMatchSnapshot();
+          expect(spy).toHaveBeenCalledTimes(1);
+          expect(spy.mock.lastCall).toMatchSnapshot();
         });
 
         test("several items", () => {
           logger[callMethod](1, "2", true);
           expect(spy).toHaveBeenCalled();
-          expect(spy).toHaveBeenCalledTimes(2);
-          expect(spy.mock.calls).toMatchSnapshot();
+          expect(spy).toHaveBeenCalledTimes(1);
+          expect(spy.mock.lastCall).toMatchSnapshot();
         });
       }
     );
