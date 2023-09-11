@@ -1,18 +1,39 @@
 {
   "name": "@bunlyfans/version",
+  "description": "Simple version manager, powered by Bun",
   "type": "module",
+  "version": "0.1.0",
+  "keywords": [
+    "bun",
+    "bunlyfans"
+  ],
+  "bugs": {
+    "url": "https://github.com/bunlyfans/bunlyfans/issues"
+  },
+  "license": "ISC",
+  "author": "bunlyfans",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunlyfans/bunlyfans.git",
+    "directory": "packages/version"
+  },
+  "homepage": "https://github.com/bunlyfans/bunlyfans/blob/main/packages/version/README.md",
+  "scripts": {
+    "test:watch": "bun test --watch --coverage"
+  },
+  "bin": {
+    "@bunlyfans/version": "./index.ts"
+  },
+  "exports": {
+    ".": "./index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "description": "Version management, powered by Bun",
-  "version": "0.1.0",
-  "author": "apastuhov",
-  "license": "ISC",
-  "scripts": {
-    "start": "bun run index.ts --watch",
-    "test": "bun test --watch"
+  "engines": {
+    "bum": "^1.0.0"
   }
 }

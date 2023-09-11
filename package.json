@@ -8,5 +8,8 @@
   "license": "ISC",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "ver": "bun ./node_modules/@bunlyfans/version"
+  }
 }

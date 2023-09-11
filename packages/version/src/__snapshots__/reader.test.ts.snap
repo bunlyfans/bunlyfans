@@ -1,0 +1,32 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reader read current repo 1`] = `
+PackageModel {
+  "file": null,
+  "name": "@mocks/mocks",
+  "originalVersion": "0.1.0",
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*",
+  ],
+}
+`;
+
+exports[`reader read current repo 2`] = `
+[
+  PackageModel {
+    "file": null,
+    "name": "@mocks/a",
+    "originalVersion": "0.1.0",
+    "version": "0.1.0",
+    "workspaces": undefined,
+  },
+  PackageModel {
+    "file": null,
+    "name": "@mocks/b",
+    "originalVersion": "0.2.0",
+    "version": "0.2.0",
+    "workspaces": undefined,
+  },
+]
+`;

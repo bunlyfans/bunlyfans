@@ -1,0 +1,5 @@
+*.test.ts
+node_modules/
+**/__snapshots__/
+screenshot/
+**/mocks/
