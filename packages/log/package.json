@@ -1,0 +1,37 @@
+{
+  "name": "@bunlyfans/log",
+  "description": "Simple logger, powered by Bun",
+  "type": "module",
+  "version": "0.1.0",
+  "keywords": [
+    "bun",
+    "bunlyfans"
+  ],
+  "bugs": {
+    "url": "https://github.com/bunlyfans/bunlyfans/issues"
+  },
+  "license": "ISC",
+  "author": "bunlyfans",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bunlyfans/bunlyfans.git",
+    "directory": "packages/log"
+  },
+  "scripts": {
+    "test:watch": "bun test --watch --coverage"
+  },
+  "exports": {
+    "./global": "./src/global.ts",
+    "./scoped": "./src/scoped.ts",
+    "./local": "./src/scoped.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "bum": "^1.0.0"
+  }
+}

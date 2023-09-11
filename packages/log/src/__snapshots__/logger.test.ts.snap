@@ -1,0 +1,2491 @@
+// Bun Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logger with color logger.s('test') should trigger console.log string 1`] = `
+[
+  [
+    "[32mtest[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log number 1`] = `
+[
+  [
+    "[32m1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[32mtrue[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[32mundefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log null 1`] = `
+[
+  [
+    "[32mnull[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log object 1`] = `
+[
+  [
+    "[32mArray:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log array 1`] = `
+[
+  [
+    "[32mArray:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.s('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[32mArray:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log string 1`] = `
+[
+  [
+    "test",
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log number 1`] = `
+[
+  [
+    "1",
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "true",
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "undefined",
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log null 1`] = `
+[
+  [
+    "null",
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log object 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log array 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.l('test') should trigger console.log several items 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log string 1`] = `
+[
+  [
+    "[34mtest[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log number 1`] = `
+[
+  [
+    "[34m1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[34mtrue[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[34mundefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log null 1`] = `
+[
+  [
+    "[34mnull[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log object 1`] = `
+[
+  [
+    "[34mArray:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log array 1`] = `
+[
+  [
+    "[34mArray:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.i('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[34mArray:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug string 1`] = `
+[
+  [
+    "[90mtest[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug number 1`] = `
+[
+  [
+    "[90m1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug boolean 1`] = `
+[
+  [
+    "[90mtrue[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug undefined 1`] = `
+[
+  [
+    "[90mundefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug null 1`] = `
+[
+  [
+    "[90mnull[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug object 1`] = `
+[
+  [
+    "[90mArray:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug array 1`] = `
+[
+  [
+    "[90mArray:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.d('test') should trigger console.debug several items 1`] = `
+[
+  [
+    "[90mArray:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error string 1`] = `
+[
+  [
+    "test",
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error number 1`] = `
+[
+  [
+    "1",
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error boolean 1`] = `
+[
+  [
+    "true",
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error undefined 1`] = `
+[
+  [
+    "undefined",
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error null 1`] = `
+[
+  [
+    "null",
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error object 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error array 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.e('test') should trigger console.error several items 1`] = `
+[
+  [
+    "Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn string 1`] = `
+[
+  [
+    "[33mtest[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn number 1`] = `
+[
+  [
+    "[33m1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn boolean 1`] = `
+[
+  [
+    "[33mtrue[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn undefined 1`] = `
+[
+  [
+    "[33mundefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn null 1`] = `
+[
+  [
+    "[33mnull[39m",
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn object 1`] = `
+[
+  [
+    "[33mArray:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn array 1`] = `
+[
+  [
+    "[33mArray:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color logger.w('test') should trigger console.warn several items 1`] = `
+[
+  [
+    "[33mArray:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log string 1`] = `
+[
+  [
+    "[32m[My Scope]	test[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log number 1`] = `
+[
+  [
+    "[32m[My Scope]	1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[32m[My Scope]	true[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[32m[My Scope]	undefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log null 1`] = `
+[
+  [
+    "[32m[My Scope]	null[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log object 1`] = `
+[
+  [
+    "[32m[My Scope]	Array:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log array 1`] = `
+[
+  [
+    "[32m[My Scope]	Array:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.s('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[32m[My Scope]	Array:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log string 1`] = `
+[
+  [
+    "[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log number 1`] = `
+[
+  [
+    "[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log null 1`] = `
+[
+  [
+    "[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log object 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log array 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.l('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log string 1`] = `
+[
+  [
+    "[34m[My Scope]	test[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log number 1`] = `
+[
+  [
+    "[34m[My Scope]	1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[34m[My Scope]	true[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[34m[My Scope]	undefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log null 1`] = `
+[
+  [
+    "[34m[My Scope]	null[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log object 1`] = `
+[
+  [
+    "[34m[My Scope]	Array:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log array 1`] = `
+[
+  [
+    "[34m[My Scope]	Array:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.i('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[34m[My Scope]	Array:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug string 1`] = `
+[
+  [
+    "[90m[My Scope]	test[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug number 1`] = `
+[
+  [
+    "[90m[My Scope]	1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug boolean 1`] = `
+[
+  [
+    "[90m[My Scope]	true[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug undefined 1`] = `
+[
+  [
+    "[90m[My Scope]	undefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug null 1`] = `
+[
+  [
+    "[90m[My Scope]	null[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug object 1`] = `
+[
+  [
+    "[90m[My Scope]	Array:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug array 1`] = `
+[
+  [
+    "[90m[My Scope]	Array:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.d('test') should trigger console.debug several items 1`] = `
+[
+  [
+    "[90m[My Scope]	Array:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error string 1`] = `
+[
+  [
+    "[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error number 1`] = `
+[
+  [
+    "[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error boolean 1`] = `
+[
+  [
+    "[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error undefined 1`] = `
+[
+  [
+    "[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error null 1`] = `
+[
+  [
+    "[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error object 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error array 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.e('test') should trigger console.error several items 1`] = `
+[
+  [
+    "[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn string 1`] = `
+[
+  [
+    "[33m[My Scope]	test[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn number 1`] = `
+[
+  [
+    "[33m[My Scope]	1[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn boolean 1`] = `
+[
+  [
+    "[33m[My Scope]	true[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn undefined 1`] = `
+[
+  [
+    "[33m[My Scope]	undefined[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn null 1`] = `
+[
+  [
+    "[33m[My Scope]	null[39m",
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn object 1`] = `
+[
+  [
+    "[33m[My Scope]	Array:[39m",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn array 1`] = `
+[
+  [
+    "[33m[My Scope]	Array:[39m",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with color and scope logger.w('test') should trigger console.warn several items 1`] = `
+[
+  [
+    "[33m[My Scope]	Array:[39m",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log string 1`] = `
+[
+  [
+    "[OK]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log number 1`] = `
+[
+  [
+    "[OK]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[OK]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[OK]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log null 1`] = `
+[
+  [
+    "[OK]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log object 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log array 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.s('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log string 1`] = `
+[
+  [
+    "[LOG]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log number 1`] = `
+[
+  [
+    "[LOG]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[LOG]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[LOG]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log null 1`] = `
+[
+  [
+    "[LOG]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log object 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log array 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.l('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log string 1`] = `
+[
+  [
+    "[INFO]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log number 1`] = `
+[
+  [
+    "[INFO]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[INFO]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[INFO]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log null 1`] = `
+[
+  [
+    "[INFO]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log object 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log array 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.i('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug string 1`] = `
+[
+  [
+    "[DEBUG]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug number 1`] = `
+[
+  [
+    "[DEBUG]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug boolean 1`] = `
+[
+  [
+    "[DEBUG]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug undefined 1`] = `
+[
+  [
+    "[DEBUG]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug null 1`] = `
+[
+  [
+    "[DEBUG]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug object 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug array 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.d('test') should trigger console.debug several items 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error string 1`] = `
+[
+  [
+    "[ERROR]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error number 1`] = `
+[
+  [
+    "[ERROR]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error boolean 1`] = `
+[
+  [
+    "[ERROR]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error undefined 1`] = `
+[
+  [
+    "[ERROR]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error null 1`] = `
+[
+  [
+    "[ERROR]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error object 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error array 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.e('test') should trigger console.error several items 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn string 1`] = `
+[
+  [
+    "[WARN]	test",
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn number 1`] = `
+[
+  [
+    "[WARN]	1",
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn boolean 1`] = `
+[
+  [
+    "[WARN]	true",
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn undefined 1`] = `
+[
+  [
+    "[WARN]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn null 1`] = `
+[
+  [
+    "[WARN]	null",
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn object 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn array 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color logger.w('test') should trigger console.warn several items 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log string 1`] = `
+[
+  [
+    "[OK]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log number 1`] = `
+[
+  [
+    "[OK]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[OK]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[OK]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log null 1`] = `
+[
+  [
+    "[OK]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log object 1`] = `
+[
+  [
+    "[OK]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log array 1`] = `
+[
+  [
+    "[OK]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.s('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[OK]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log string 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log number 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log null 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log object 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log array 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.l('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[LOG]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log string 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log number 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log null 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log object 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log array 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.i('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[INFO]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug string 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug number 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug boolean 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug undefined 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug null 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug object 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug array 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.d('test') should trigger console.debug several items 1`] = `
+[
+  [
+    "[DEBUG]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error string 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error number 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error boolean 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error undefined 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error null 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error object 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error array 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.e('test') should trigger console.error several items 1`] = `
+[
+  [
+    "[ERROR]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn string 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	test",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn number 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	1",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn boolean 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	true",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn undefined 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	undefined",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn null 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	null",
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn object 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn array 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger without color but with scope logger.w('test') should trigger console.warn several items 1`] = `
+[
+  [
+    "[WARN]	[My Scope]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log string 1`] = `
+[
+  [
+    "[OK]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log number 1`] = `
+[
+  [
+    "[OK]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[OK]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[OK]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log null 1`] = `
+[
+  [
+    "[OK]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log object 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log array 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.s('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[OK]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log string 1`] = `
+[
+  [
+    "[LOG]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log number 1`] = `
+[
+  [
+    "[LOG]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[LOG]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[LOG]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log null 1`] = `
+[
+  [
+    "[LOG]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log object 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log array 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.l('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[LOG]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log string 1`] = `
+[
+  [
+    "[INFO]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log number 1`] = `
+[
+  [
+    "[INFO]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log boolean 1`] = `
+[
+  [
+    "[INFO]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log undefined 1`] = `
+[
+  [
+    "[INFO]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log null 1`] = `
+[
+  [
+    "[INFO]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log object 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log array 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.i('test') should trigger console.log several items 1`] = `
+[
+  [
+    "[INFO]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug string 1`] = `
+[
+  [
+    "[DEBUG]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug number 1`] = `
+[
+  [
+    "[DEBUG]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug boolean 1`] = `
+[
+  [
+    "[DEBUG]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug undefined 1`] = `
+[
+  [
+    "[DEBUG]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug null 1`] = `
+[
+  [
+    "[DEBUG]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug object 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug array 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.d('test') should trigger console.debug several items 1`] = `
+[
+  [
+    "[DEBUG]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error string 1`] = `
+[
+  [
+    "[ERROR]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error number 1`] = `
+[
+  [
+    "[ERROR]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error boolean 1`] = `
+[
+  [
+    "[ERROR]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error undefined 1`] = `
+[
+  [
+    "[ERROR]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error null 1`] = `
+[
+  [
+    "[ERROR]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error object 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error array 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.e('test') should trigger console.error several items 1`] = `
+[
+  [
+    "[ERROR]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn string 1`] = `
+[
+  [
+    "[WARN]	test",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn number 1`] = `
+[
+  [
+    "[WARN]	1",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn boolean 1`] = `
+[
+  [
+    "[WARN]	true",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn undefined 1`] = `
+[
+  [
+    "[WARN]	undefined",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn null 1`] = `
+[
+  [
+    "[WARN]	null",
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn object 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    {
+      "a": 1,
+      "b": "2",
+      "c": true,
+    },
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn array 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    [
+      1,
+      "2",
+      true,
+    ],
+  ],
+]
+`;
+
+exports[`Logger with disabled color logger.w('test') should trigger console.warn several items 1`] = `
+[
+  [
+    "[WARN]	Array:",
+  ],
+  [
+    1,
+    "2",
+    true,
+  ],
+]
+`;
