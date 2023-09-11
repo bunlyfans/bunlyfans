@@ -3,7 +3,7 @@
 ![Bun Version](https://img.shields.io/badge/bun-v1.0.0-blue)
 ![Version](https://img.shields.io/npm/v/@bunlyfans/log.svg)
 ![Build Status](https://img.shields.io/badge/build-passed-success)
-![Test Coverage](https://img.shields.io/badge/coverage-100%-success)
+![Test Coverage](https://img.shields.io/badge/coverage-100-success)
 
 Simple and colorful logger for your Bun project!
 
