@@ -1,18 +1,37 @@
 {
   "name": "@bunlyfans/rest",
+  "description": "Simple server for you to REST, powered by Bun",
   "type": "module",
+  "version": "0.1.0",
+  "keywords": [
+    "bun",
+    "bunlyfans"
+  ],
+  "bugs": {
+    "url": "https://github.com/bunlyfans/bunlyfans/issues"
+  },
+  "license": "ISC",
+  "author": "bunlyfans",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bunlyfans/bunlyfans.git",
+    "directory": "packages/rest"
+  },
+  "homepage": "https://github.com/bunlyfans/bunlyfans/blob/main/packages/rest/README.md",
+  "scripts": {
+    "dev": "bun run --watch example/index.ts",
+    "test:watch": "bun test --watch --coverage"
+  },
+  "exports": {
+    "./index": "./index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "description": "REST framework, powered by Bun",
-  "version": "0.1.0",
-  "author": "apastuhov",
-  "license": "ISC",
-  "scripts": {
-    "start": "bun run index.ts --watch",
-    "test": "bun test --watch"
+  "engines": {
+    "bun": "^1.0.0"
   }
 }
