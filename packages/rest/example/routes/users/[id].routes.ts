@@ -7,14 +7,14 @@ import {
   users,
 } from "../../repository";
 
-// ('/users',
+// POST /users
 export const POST: Route = async (req, route) => {
   const jsonBody = await req.json();
   const user = addItem(users, jsonBody);
   return Response.json(user, { status: 201 });
 };
 
-// ('/users/:id',
+// GET /users/[id]
 export const GET: Route = (req, route) => {
   const id = Number(route.params.id);
   const user = findById(users, id);
@@ -24,14 +24,7 @@ export const GET: Route = (req, route) => {
   return Response.json(user);
 };
 
-// ('/organizations/:id/users',
-// export const GET: Route = (req, res) => {
-//     const { id } = req.params;
-//     const orgUsers = users.filter(u => u.organizationId == id);
-//     res.json(orgUsers);
-// });
-
-// ('/users/:id',
+// PUT /users/[id]
 export const PUT: Route = async (req, route) => {
   const id = Number(route.params.id);
   const jsonBody = await req.json();
@@ -42,12 +35,12 @@ export const PUT: Route = async (req, route) => {
   return Response.json(updatedUser);
 };
 
-// ('/users/:id',
+// DELETE /users/[id]
 export const DELETE: Route = (req, route) => {
   const id = Number(route.params.id);
   const deleted = deleteItem(users, id);
   if (!deleted) {
     throw new ErrorResponse(404, "User not found");
   }
-  return new Response(undefined, { statusText: "User deleted" });
+  return new Response("User deleted");
 };
