@@ -5,6 +5,8 @@ import {
   PostMiddleware,
   PreMiddleware,
   ProcessContext,
+  isPostMiddleware,
+  isPreMiddleware,
 } from "./middleware/middleware";
 import { ErrorResponse, STATUS_CODE } from "./types";
 
@@ -13,13 +15,8 @@ export class RequestProcessor {
   private postMiddlewares: PostMiddleware[];
 
   constructor(middlewares: Middleware[]) {
-    this.postMiddlewares = middlewares.filter(
-      (m) => m instanceof PostMiddleware
-    ) as PostMiddleware[];
-
-    this.preMiddlewares = middlewares.filter(
-      (m) => m instanceof PreMiddleware
-    ) as PreMiddleware[];
+    this.postMiddlewares = middlewares.filter(isPostMiddleware);
+    this.preMiddlewares = middlewares.filter(isPreMiddleware);
   }
 
   async process(
@@ -29,10 +26,6 @@ export class RequestProcessor {
     const log = Log({
       scope: request.method === "DELETE" ? "DEL" : request.method,
     });
-
-    const url = new URL(request.url);
-    const relativeUrl = url.pathname + (url.search || "");
-    log.d(relativeUrl);
 
     const context = {
       log,
@@ -56,8 +49,6 @@ export class RequestProcessor {
       let response = await callback(request, route);
 
       response = await this.processPostMiddlewares(request, response, context);
-
-      log.o(`${response.status}\t${relativeUrl}`);
 
       return response;
     } catch (error) {
