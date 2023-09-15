@@ -1,5 +1,4 @@
-import { DebugMiddleware } from "../src/middleware/debug-middleware";
-import { Router } from "../src/router";
+import { Router, DebugMiddleware } from "../";
 
 const router = new Router({
   dir: "/routes/",

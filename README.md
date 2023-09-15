@@ -2,6 +2,12 @@
 
 All packages are built only for [Bun](https://bun.sh). It will not work in NodeJS or Deno.
 
+## Packages
+
+- [`@bunlyfans/rest`](./packages/rest/README.md) - HTTP framework to build REST APIs with Bun!
+- [`@bunlyfans/log`](./packages/log/README.md) - Simple and colorful logger for your Bun project!
+- [`@bunlyfans/version`](./packages/version/README.md) - Version management, with monorepo support!
+
 ## Motivation
 
 ### #1. Keep dependencies minimal
@@ -48,9 +54,3 @@ bun dev # not all packages have dev script
 bun test
 bun test:watch
 ```
-
-## Packages
-
-- [`@bunlyfans/version`](./packages/version/README.md) - Version management, with monorepo support! **[WIP]**
-- [`@bunlyfans/log`](./packages/log/README.md) - Simple and colorful logger for your Bun project!
-- [`@bunlyfans/rest`](./packages/rest/README.md) - HTTP framework to build REST APIs with Bun! **[WIP]**

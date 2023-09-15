@@ -2,7 +2,7 @@
   "name": "@bunlyfans/rest",
   "description": "Simple server for you to REST, powered by Bun",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "keywords": [
     "bun",
     "bunlyfans"
@@ -23,13 +23,16 @@
     "test:watch": "bun test --watch --coverage"
   },
   "exports": {
-    "./index": "./index.ts"
+    ".": "./index.ts"
   },
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@bunlyfans/log": "^0.1.3"
   },
   "engines": {
     "bun": "^1.0.0"

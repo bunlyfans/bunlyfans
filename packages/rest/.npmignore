@@ -1,0 +1,4 @@
+*.test.ts
+example/
+**/__snapshots__/
+screenshot/
