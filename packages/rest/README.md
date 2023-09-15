@@ -22,10 +22,14 @@ If you have any ideas / thougts / feature requests or want to contribute - feel 
 See example directory for more details.
 
 ```bash
+mkdir server
+cd server
+bun init
 bun add @bunlyfans/rest
+mkdir -p routes/users
 ```
 
-Create folder directory:
+Create routes file `[id].routes.ts` in this dir, so you will have folder directory:
 
 ```sh
 - src/
@@ -58,16 +62,12 @@ Add next content to `routes/users/[id].routes.ts`:
 ```ts
 import { JSON, Param } from "@bunlyfans/rest";
 
-export const middlewares = [new MyCustomMiddleware()];
-
-GET.middlewares = [new UserExistsMiddleware()];
 // This function will handle `GET /users/[id]` request
 export function GET(id: Param<number>) { 
   // ..
-  return Response.json(user);
+  return Response.json('user ' + id);
 }
 
-DELETE.middlewares = [new AllowFor([USER_ROLES.ADMIN])];
 export async function DELETE(id: Param<number>, user: JSON<unknown>) {
   // ..
   return new Response('User deleted');
@@ -78,6 +78,8 @@ export async function POST(user: JSON<User>) {
   return Response.json(user, { status: 201 });
 }
 ```
+
+And run with `bun run index.ts`, now you can run `curl localhost:3000/users/1` and server will handle GET request
 
 ## Router
 
