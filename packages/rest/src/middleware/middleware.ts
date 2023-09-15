@@ -1,29 +1,27 @@
 import { Log } from "@bunlyfans/log/scoped";
+import { MatchedRoute } from "bun";
 
-export type ProcessContext = {
-  log: ReturnType<typeof Log>;
+export type RequestContext = {
+  readonly log: ReturnType<typeof Log>;
+  readonly request: Request;
+  readonly route: MatchedRoute;
 };
 
 export interface PreMiddleware {
-  preProcess(
-    request: Request,
-    context: ProcessContext
-  ): void | Promise<void> | Request | Promise<Request>;
+  preProcess(context: RequestContext): void | Promise<void>;
 }
 
 export interface PostMiddleware {
   postProcess(
-    request: Request,
-    response: Response,
-    context: ProcessContext
+    context: RequestContext,
+    response: Response
   ): void | Promise<void> | Response | Promise<Response>;
 }
 
 export interface ErrorHandler {
   handle(
-    request: Request,
-    response: Response,
-    context: ProcessContext
+    context: RequestContext,
+    response: Response
   ): void | Promise<void> | Response | Promise<Response>;
 }
 
