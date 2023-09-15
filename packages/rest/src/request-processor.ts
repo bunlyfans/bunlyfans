@@ -1,23 +1,18 @@
 import { Log } from "@bunlyfans/log/scoped";
 import { MatchedRoute } from "bun";
+import { Argument, parseArgumentsFromFunction } from "./ast/code-parser";
+import { resolveArgumentFromContext } from "./ast/resolver";
+import { errorHandler } from "./error-handler";
+import { res } from "./invalid-response";
 import {
   Middleware,
-  PostMiddleware,
-  PreMiddleware,
-  ProcessContext,
+  RequestContext,
   isPostMiddleware,
   isPreMiddleware,
 } from "./middleware/middleware";
-import { ErrorResponse, STATUS_CODE } from "./types";
 
 export class RequestProcessor {
-  private preMiddlewares: PreMiddleware[];
-  private postMiddlewares: PostMiddleware[];
-
-  constructor(middlewares: Middleware[]) {
-    this.postMiddlewares = middlewares.filter(isPostMiddleware);
-    this.preMiddlewares = middlewares.filter(isPreMiddleware);
-  }
+  constructor(private middlewares: Middleware[]) {}
 
   async process(
     request: Request,
@@ -27,63 +22,81 @@ export class RequestProcessor {
       scope: request.method === "DELETE" ? "DEL" : request.method,
     });
 
-    const context = {
-      log,
-    };
-
     try {
       if (!route) {
-        throw new ErrorResponse(STATUS_CODE.NOT_FOUND);
+        throw res.notFound();
       }
 
-      request = await this.processPreMiddlewares(request, context);
+      let context: RequestContext = {
+        log,
+        route,
+        request,
+      };
 
       const resolved = await import(route.filePath);
       const method = request.method.toUpperCase();
-      const callback = resolved[method];
+      const handler = resolved[method];
+      const args: Argument[] =
+        handler.args ||
+        (await parseArgumentsFromFunction(route.filePath, handler, method));
 
-      if (!callback) {
-        throw new ErrorResponse(STATUS_CODE.METHOD_NOT_ALLOWED);
+      if (!handler.args) {
+        handler.args = args;
       }
 
-      let response = await callback(request, route);
+      const specificMiddlewares = handler?.middlewares || [];
 
-      response = await this.processPostMiddlewares(request, response, context);
+      if (!handler) {
+        throw res.methodNotAllowed();
+      }
+
+      const middlewares = [
+        ...this.middlewares,
+        ...(resolved.middlewares || []),
+        ...specificMiddlewares,
+      ];
+
+      await this.processPreMiddlewares(middlewares, context);
+
+      let resolvedArguments = await Promise.all(
+        args.map((arg) => resolveArgumentFromContext(arg, context))
+      );
+
+      let response = await handler(...resolvedArguments);
+
+      response = await this.processPostMiddlewares(
+        middlewares,
+        context,
+        response
+      );
 
       return response;
     } catch (error) {
-      // TODO: handle error based on its type
-      // ...
-      if (error instanceof ErrorResponse) {
-        log.e(`${error.status}\t${await error.text()}`);
-        return error;
-      }
-
-      log.e("Error processing:", error);
-
-      return new ErrorResponse(500);
+      return await errorHandler(log, error);
     }
   }
 
   private async processPreMiddlewares(
-    request: Request,
-    context: ProcessContext
-  ): Promise<Request> {
-    for (const middleware of this.preMiddlewares) {
-      const result = await middleware.preProcess(request, context);
-      request = result || request;
+    middlewares: Middleware[],
+    context: RequestContext
+  ): Promise<void> {
+    for (const middleware of middlewares) {
+      if (isPreMiddleware(middleware)) {
+        await middleware.preProcess(context);
+      }
     }
-    return request;
   }
 
   private async processPostMiddlewares(
-    request: Request,
-    response: Response,
-    context: ProcessContext
+    middlewares: Middleware[],
+    context: RequestContext,
+    response: Response
   ): Promise<Response> {
-    for (const middleware of this.postMiddlewares) {
-      const result = await middleware.postProcess(request, response, context);
-      response = result || response;
+    for (const middleware of middlewares) {
+      if (isPostMiddleware(middleware)) {
+        const result = await middleware.postProcess(context, response);
+        response = result || response;
+      }
     }
     return response;
   }
