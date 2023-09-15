@@ -1,16 +1,17 @@
-import { ErrorResponse, Route } from "../../../src/types";
+import { Param } from "../../../";
 import { deleteItem, organizations, users } from "../../repository";
+import { OrgExistsMiddleware } from "./org-exists.middleware";
+
+/**
+ * This is a module middleware that will be applied to all routes in this file.
+ */
+export const middlewares = [new OrgExistsMiddleware()];
 
 // DELETE /organizations/[id]
-export const DELETE: Route = (req, route) => {
-  const id = Number(route.params.id);
-  const deleted = deleteItem(organizations, id);
+export function DELETE(id: Param<number>) {
+  deleteItem(organizations, id);
   users
     .filter((u) => u.organizationId == id)
     .forEach((u) => deleteItem(users, u.id));
-  if (!deleted) {
-    // If you want to return 404 or other error code with message and/or body, just throw ErrorResponse
-    throw new ErrorResponse(404, "Organization not found");
-  }
   return new Response("Organization deleted");
-};
+}

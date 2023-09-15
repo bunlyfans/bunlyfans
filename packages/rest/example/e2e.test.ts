@@ -53,4 +53,10 @@ describe("CRUD Users under Organization", () => {
     response.isOk();
     await response.toBe("User deleted");
   });
+
+  test("DELETE Org should fail if not exists", async () => {
+    const response = await del(HOST + `/organizations/${-1}`);
+    response.hasStatus(404);
+    await response.toBe("Organization not found");
+  });
 });

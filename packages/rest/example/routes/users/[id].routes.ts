@@ -1,4 +1,4 @@
-import { ErrorResponse, Route } from "../../../src/types";
+import { JSON, Param } from "../../..";
 import {
   addItem,
   deleteItem,
@@ -6,41 +6,34 @@ import {
   updateItem,
   users,
 } from "../../repository";
+import { UserExistsMiddleware } from "./user-exists.middleware";
 
 // POST /users
-export const POST: Route = async (req, route) => {
-  const jsonBody = await req.json();
+export async function POST(jsonBody: JSON<unknown>) {
   const user = addItem(users, jsonBody);
   return Response.json(user, { status: 201 });
-};
+}
 
 // GET /users/[id]
-export const GET: Route = (req, route) => {
-  const id = Number(route.params.id);
+/**
+ * This is a local middleware that will be applied only to this route.
+ */
+GET.middlewares = [new UserExistsMiddleware()];
+export function GET(id: Param<number>) {
   const user = findById(users, id);
-  if (!user) {
-    throw new ErrorResponse(404, "User not found");
-  }
   return Response.json(user);
-};
+}
 
 // PUT /users/[id]
-export const PUT: Route = async (req, route) => {
-  const id = Number(route.params.id);
-  const jsonBody = await req.json();
-  const updatedUser = updateItem(users, id, jsonBody);
-  if (!updatedUser) {
-    throw new ErrorResponse(404, "User not found");
-  }
+PUT.middlewares = [new UserExistsMiddleware()];
+export async function PUT(id: Param<number>, user: JSON<unknown>) {
+  const updatedUser = updateItem(users, id, user);
   return Response.json(updatedUser);
-};
+}
 
 // DELETE /users/[id]
-export const DELETE: Route = (req, route) => {
-  const id = Number(route.params.id);
-  const deleted = deleteItem(users, id);
-  if (!deleted) {
-    throw new ErrorResponse(404, "User not found");
-  }
+DELETE.middlewares = [new UserExistsMiddleware()];
+export function DELETE(id: Param<number>) {
+  deleteItem(users, id);
   return new Response("User deleted");
-};
+}

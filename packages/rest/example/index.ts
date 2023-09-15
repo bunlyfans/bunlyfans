@@ -6,6 +6,9 @@ const router = new Router({
   debug: true,
 });
 
+/**
+ * This is a global middleware that will be applied to the whole project/router.
+ */
 router.register(new DebugMiddleware());
 
 Bun.serve({

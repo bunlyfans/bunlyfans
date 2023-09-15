@@ -1,9 +1,8 @@
-import { Route } from "../../../../src/types";
+import { Param, res } from "../../../../";
 import { users } from "../../../repository";
 
 // GET /organizations/:id/users
-export const GET: Route = (req, route) => {
-  const id = Number(route.params.id);
+export function GET(id: Param<number>) {
   const orgUsers = users.filter((u) => u.organizationId == id);
   return Response.json(orgUsers);
-};
+}
